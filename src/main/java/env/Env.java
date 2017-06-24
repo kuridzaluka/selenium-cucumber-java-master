@@ -106,11 +106,13 @@ public class Env
 				//ProfilesIni allProfiles = new ProfilesIni();
 				//FirefoxProfile profile = allProfiles.getProfile("selenium");
 				//driver = new FirefoxDriver(profile);
+				System.setProperty("webdriver.gecko.driver", "C:\\webdrivers\\geckodriver-v0.14.0-win64\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				break;
 
 			case "ch":
 			case "chrome":
+				System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
 				driver = new ChromeDriver();
 				break;
 
