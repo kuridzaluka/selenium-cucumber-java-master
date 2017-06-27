@@ -18,5 +18,3 @@ Feature: Igame Login
        | klue3      | Jagoda11 |
        | kime1      | SuperSecure11 |
        
-    Scenario: Close browser
-    Then I close browser
