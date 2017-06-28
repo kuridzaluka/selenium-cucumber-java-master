@@ -7,7 +7,7 @@ Feature: Igame Invalid Login
     And I enter "<username>" into input field having id "ulogin"
     And I enter "<password>" into input field having id "upass"
     When I click on element having id "loginSubmitBtn"
-    Then I wait 5 seconds for element having id "generic-error" to display
+    Then I wait 5 seconds for element having css "a.login-forgot-password" to display
     Then element having id "generic-error" should have partial text as "Login or password is incorrect."
     
     Examples:
